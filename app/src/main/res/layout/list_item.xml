@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        app:fontFamily="@font/dm_sans_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="hello" />
+
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:textSize="30sp"
+        android:textColor="#3af06a"
+        app:fontFamily="@font/dm_sans_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvItemName"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="899.75" />
+
+    <TextView
+        android:id="@+id/tvItemURL"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textSize="20sp"
+        app:fontFamily="@font/dm_sans_medium"
+        app:layout_constraintStart_toStartOf="@+id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemName"
+        tools:text="www.google.com" />
+</androidx.constraintlayout.widget.ConstraintLayout>
